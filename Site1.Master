@@ -20,6 +20,7 @@
                 <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/sanpham.aspx">Sản phầm</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/khuyenmai.aspx">Khuyến mãi</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/lienhe.aspx">Liên hệ</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/dangki.aspx">Đăng ký</asp:HyperLink>
             </div>
         </div>
         <div class="banner">
