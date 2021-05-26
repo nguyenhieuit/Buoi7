@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
         <div class="menu">
             <div class="logo">
-                <asp:Image CssClass="img_logo" ID="Image1" runat="server" ImageUrl="./images/logo.jpg" /></div>
+                <asp:Image CssClass="img_logo" ID="Image1" runat="server" ImageUrl="./images/mm1.gif" /></div>
             <div class="menuright">
                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/home.aspx">Trang chủ</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/dichvu.aspx">Dịch vụ</asp:HyperLink>
