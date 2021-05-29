@@ -27,24 +27,16 @@
             <asp:Image CssClass="img_banner" ID="Image2" runat="server" ImageUrl="./images/banner.png"/>
         </div>
         <div class="left">
-            <ul>
-                <li>
-                    <asp:HyperLink ID="HyperLink6" runat="server">Chính sách bảo hành</asp:HyperLink>
-                </li>
-                <li>
-                    <asp:HyperLink ID="HyperLink10" runat="server">Bảo dưỡng sửa chữa</asp:HyperLink>
-                </li>
-                <li>
-                    <asp:HyperLink ID="HyperLink8" runat="server">Dịch vụ cứu hộ</asp:HyperLink>
-                </li>
-                <li>
-                    <asp:HyperLink ID="HyperLink9" runat="server">Tư vấn tài chính</asp:HyperLink>
-                </li>
-            </ul>
+            <h1>Danh mục loại</h1>
+            <asp:DataList ID="dt_list1" runat="server">
+                <ItemTemplate>
+                    <asp:LinkButton CssClass="linkDM" ID="LinkButton1" runat="server" Text='<%# Eval("TenLoai") %>'></asp:LinkButton>
+                </ItemTemplate>
+            </asp:DataList>
         </div>
         <div class="right">
             <div class="top_bread">
-                <marquee onmouseover="this.stop()" onmouseout="this.start()">Tuần lễ vàng</marquee>
+                <marquee onmouseover="this.stop()" onmouseout="this.start()" >Tuần lễ vàng</marquee>
             </div>
             <div class="content">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
