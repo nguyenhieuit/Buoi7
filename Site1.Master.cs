@@ -25,5 +25,12 @@ namespace Buoi7
             dt_list1.DataSource = dt;
             this.dt_list1.DataBind();
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            String MaLoai = ((LinkButton)sender).CommandArgument;
+            Context.Items["ML"] = MaLoai;
+            Server.Transfer("sanpham.aspx");
+        }
     }
 }

@@ -28,9 +28,10 @@
         </div>
         <div class="left">
             <h1>Danh mục loại</h1>
-            <asp:DataList ID="dt_list1" runat="server">
+            <asp:DataList ID="dt_list1" runat="server" >
                 <ItemTemplate>
-                    <asp:LinkButton CssClass="linkDM" ID="LinkButton1" runat="server" Text='<%# Eval("TenLoai") %>'></asp:LinkButton>
+                    <asp:LinkButton CssClass="linkDM" ID="LinkButton1" runat="server" Text='<%# Eval("TenLoai") %>' 
+                        CommandArgument='<%# Eval("MaLoai") %>' OnClick="LinkButton1_Click"></asp:LinkButton>
                 </ItemTemplate>
             </asp:DataList>
         </div>
