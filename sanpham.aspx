@@ -4,15 +4,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>sản phẩm
-        <asp:DataList ID="DataList1" runat="server">
+        <asp:DataList ID="DataList1" runat="server" RepeatColumns="3">
             <ItemTemplate>
                 <asp:Label ID="Label1" runat="server" Text='<%# Eval("TenMH") %>'></asp:Label>
                 <br />
                 <asp:Image CssClass="img_sp" ID="Image3" runat="server" ImageUrl='<%# "~/images/"+Eval("Hinh") %>' Width="100px"/>
                 <br />
                 <asp:Label ID="Label2" runat="server" Text='<%# Eval("DonGia") %>'></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
                 <asp:Label ID="Label3" runat="server" Text='<%# Eval("MoTa") %>'></asp:Label>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="chitiet.aspx">Chi tiết</asp:HyperLink>
             </ItemTemplate>
         </asp:DataList>
     </h1>

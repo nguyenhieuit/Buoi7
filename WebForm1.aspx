@@ -13,9 +13,9 @@
             <div class="logo">
                 <asp:Image CssClass="img_logo" ID="Image1" runat="server" ImageUrl="./images/logo.jpg" /></div>
             <div class="menuright">
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/home.aspx.cs">Trang chủ</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Dichvu.aspx.cs">Dịch vụ</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink3" runat="server">Sản phầm</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" >Trang chủ</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" >Dịch vụ</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink3" runat="server" >Sản phầm</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink4" runat="server">Khuyến mãi</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink5" runat="server">Liên hệ</asp:HyperLink>
             </div>
